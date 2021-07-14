@@ -1,9 +1,9 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .banner{
@@ -18,8 +18,8 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #2d25
 .banner-item{
     display: flex;
     align-items: center;
-    padding-left: 156px;
     padding-top: 207px;
+    padding-left: 156px;
 }
 #size{
     color: white;
@@ -38,4 +38,23 @@ top: 464px;
 text-decoration: none;
 
 background: #E02C6D;
+}
+.top-player-container{
+    background-color: white;
+    padding-top: 750px;
+    margin-right: 500px;
+    margin-left: 100px;
+}
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.player img{
+    width: 330px;
+    height: 474px;
+
+}
+.para-size{
+    padding-right: 100px;
+    font-size: 20px;
 }
