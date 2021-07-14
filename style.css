@@ -4,7 +4,10 @@ body{
     padding: 0;
     
 }
-
+h1{
+    color: white;
+}
+/* banner set start */
 .banner{
     position: absolute;
 width: 1440px;
@@ -23,6 +26,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #2d25
 #size{
     background-color: #E02C6D;
     margin-right: 5px;
+    color: white;
 
 }
 .pic-size{
@@ -31,15 +35,8 @@ height: 438px;
 left: 1299.01px;
 top: 153px;
 }
-.anchor-size{
-    width: 168px;
-height: 44px;
-left: 156px;
-top: 464px;
-text-decoration: none;
-
-background: #E02C6D;
-}
+/* banner set end */
+/* players information set start */
 .top-player-container{
     background-color: white;
     padding-top: 750px;
@@ -58,6 +55,8 @@ background: #E02C6D;
 .para-size{
     padding-right: 100px;
 }
+/* player information set end */
+/* bonus part start */
 .bonus-part{
     display: flex;
     margin-top: 80px;
@@ -66,12 +65,15 @@ background: #E02C6D;
     width: 466px;
 height: 309px;
 margin-top: 300px;
+margin-left: 100px;
 
 }
 .hi-photo{
     width: 10%;
     height: 10%;
 }
+/* bonus part end */
+/* footer set start */
 footer{
     display: flex;
     flex-direction: column;
@@ -92,5 +94,23 @@ footer{
     padding: 8px;
     border-radius:50%
 }
+/* footer set end */
+/* media queries */
+/* mobile devices */
+    @media only screen and (max-width:688){
+        .top-player-container{
+            width:100%;
+         }
+         .players .bonus-part{
+             grid-template-columns: repeat(1,1fr);
+         }
+         .player .highlight-content .hi-photo{
+             flex-direction: column;
+         }
+
+
+    }
+        
+
 
 
